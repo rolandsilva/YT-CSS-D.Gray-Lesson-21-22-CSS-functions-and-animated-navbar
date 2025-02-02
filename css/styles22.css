@@ -62,7 +62,8 @@ div:nth-child(2) {
     transform: rotateY(45deg)
         /* rotated 180 degrees so it is backwards on y axis */
         /* 90 degrees is side ways so you don;t see it */
-        /* rotates on 3d axis like flipping pizza box */
+        /* rotates on 3d ax
+        is like flipping pizza box */
 
         /* transform: translateY(-2rem); */
         /* moves things up and down */
