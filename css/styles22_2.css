@@ -1,0 +1,77 @@
+/* <!-- YT CSS D.Gray Lesson 22 Animated Navbar --> */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.h1lessontext {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0px 0 0px 0;
+    padding: 5px;
+    background-color: rgb(43, 173, 199);
+    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: grid;
+    place-content: center;
+}
+
+div:first-child {
+    background-color: dodgerblue;
+
+    transform: rotateX(180deg)
+        /* rotated 180 degrees so it is backwards */
+        /* rotates on 3d axis like flipping pizza box */
+
+        /* transform: translateX(-50%); */
+        /* moves things left and right*/
+}
+
+div:nth-child(2) {
+    background-color: yellow;
+
+    transform: rotateY(45deg)
+        /* rotated 180 degrees so it is backwards on y axis */
+        /* 90 degrees is side ways so you don;t see it */
+        /* rotates on 3d ax
+        is like flipping pizza box */
+
+        /* transform: translateY(-2rem); */
+        /* moves things up and down */
+}
+
+div:last-child {
+    background-color: green;
+
+    /* transform: translate(100%, -5rem); */
+    /* shorthand for tranlateX and tranlateY */
+}
