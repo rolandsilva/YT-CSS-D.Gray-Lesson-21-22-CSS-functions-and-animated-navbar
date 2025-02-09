@@ -1,6 +1,7 @@
 /* <!-- YT CSS D.Gray Lesson 22 Animated Navbar --> */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/* || RESET || */
 * {
     margin: 0;
     padding: 0;
@@ -43,4 +44,56 @@ div {
     border: 1px solid #000;
     display: grid;
     place-content: center;
+}
+
+/* transform: translate  */
+/* x moves left or right (horizontally) */
+/* y moves up or down (vertically  */
+
+div:first-child {
+    background-color: dodgerblue;
+    /* transform: translateX(-50%); */
+
+    transform: rotateX(120deg);
+    /* rotates around the center by specified angle, flipped (horizontally) top to bottom */
+
+    /* The scale() function in CSS resizes an element along the X and Y axes. It allows for enlarging or shrinking an element without affecting the document flow. */
+
+    /* transform: scaleX(120%); */
+    /* transform: scaleX(1.2); */
+    /* same as above */
+
+    /* Skew(x-angle, y-angle)
+    The skew() function distorts an element along the X and Y axes. */
+
+    /* transform: skewX(-10deg); */
+
+}
+
+div:nth-child(2) {
+    background-color: yellow;
+    /* transform: translatey(-2rem); */
+
+    transform: rotateY(120deg);
+    /* rotates around the center by specified angle, flipped (vertically) left to right */
+
+    /* transform: scaleY(1.2); */
+
+    /* transform: skewY(10deg); */
+}
+
+div:last-child {
+    background-color: limegreen;
+    /* transform: translate(100%, -2rem) */
+
+    /* transform: rotateZ(180deg); */
+    /* rotateZ rotates around the center by specified angle, flipped clockwise */
+
+    transform: rotate(180deg);
+    /* same as rotateZ */
+
+    /* transform: scale(50%, 50%); */
+    /* makes this 50% smaller on both axises */
+
+    /* transform: skew(-10deg, -10deg); */
 }
